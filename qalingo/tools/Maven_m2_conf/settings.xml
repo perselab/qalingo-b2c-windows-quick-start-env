@@ -20,6 +20,13 @@
 				<spring.security.context.relative>true</spring.security.context.relative>
 				<packaging.excludes />
 
+				<skip-setup-mysql>true</skip-setup-mysql>
+				<cache.configuration.location>file:/C:/dev/hoteia/qalingo/workspace/git/qalingo-b2c-engine/misc/qalingo-ehcache/standard/dev-ehcache.xml</cache.configuration.location>
+				
+				<jdbc.url.root>jdbc:mysql://localhost:3306/</jdbc.url.root>
+				<jdbc.username.root>root</jdbc.username.root>
+				<jdbc.password.root>root</jdbc.password.root>
+
 				<jdbc.username>qalingo</jdbc.username>
 				<jdbc.password>password</jdbc.password>
 				<jdbc.url>jdbc:mysql://localhost:3306/qalingo?AutoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8</jdbc.url>
@@ -37,6 +44,9 @@
 				<fo.marketplace.velocity.www.pages.path>C:/dev/hoteia/qalingo/workspace/git/qalingo-b2c-web-ext-fo/qalingo-theme-ext-assets/qalingo-assets-ext-frontoffice/qalingo-assets-marketplace-pages/target/fo-marketplace-pages/velocity/themes</fo.marketplace.velocity.www.pages.path>
 				<fo.showroom.velocity.www.pages.path>C:/dev/hoteia/qalingo/workspace/git/qalingo-b2c-web-ext-fo/qalingo-theme-ext-assets/qalingo-assets-ext-frontoffice/qalingo-assets-showroom-pages/target/fo-showroom-pages/velocity/themes</fo.showroom.velocity.www.pages.path>
 				
+				<multipart.resolver.max.upload.size>100000</multipart.resolver.max.upload.size>
+				<multipart.resolver.upload.temp.dir>/datas/dev/hoteia/qalingo/workspace/upload/</multipart.resolver.upload.temp.dir>
+				
 				<wurfl.xml.path>file:///C:/dev/hoteia/qalingo/workspace/misc/wurfl/wurfl.zip</wurfl.xml.path>
 
 				<!-- BATCH -->
@@ -50,8 +60,10 @@
                 <batch.crm.commit.interval>200</batch.crm.commit.interval>
                 <batch.erp.cron>0 0/1 * * * ?</batch.erp.cron>
                 <batch.erp.commit.interval>200</batch.erp.commit.interval>
-                <batch.email.cleaner.cron>0 0/10 * * * ?</batch.email.cleaner.cron>                <batch.email.notification.cron>0 0/1 * * * ?</batch.email.notification.cron>
+                <batch.email.cleaner.cron>0 0/10 * * * ?</batch.email.cleaner.cron>
+				<batch.email.notification.cron>0 0/1 * * * ?</batch.email.notification.cron>
                 <batch.email.notification.commit.interval>200</batch.email.notification.commit.interval>
+				<batch.server.status.cleaner.cron>0 0 0/2 * * ?</batch.server.status.cleaner.cron>
 
                 <tomcat.context.url>http://localhost:13080/app-notification/</tomcat.context.url>
 				
