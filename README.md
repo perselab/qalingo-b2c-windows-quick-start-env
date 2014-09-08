@@ -63,3 +63,7 @@ Run:
 - Run the tomcat by command: (5)/qalingo/server-tomcat-startup-frontoffice-mcommerce.bat
 - Open file: (1)/sites_urls.html
 - Open link: >> {Q}alingo - Frontoffice mCommerce (Apache)
+
+
+All the documentation is here: http://docs.qalingo.org
+
